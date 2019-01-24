@@ -1,0 +1,35 @@
+{
+  "name": "leagueSite",
+  "version": "1.0.0",
+  "description": "Fantasy Football league website built with react.",
+  "engines": {
+    "node": ">=9.x",
+    "npm": ">=5.x",
+    "yarn": ">=1.x.x"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "styled-components",
+    "website"
+  ],
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "parcel build ./src/index.html",
+    "start": "parcel ./src/index.html -p 1337"
+  },
+  "author": "Your name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.4.1"
+  }
+}
