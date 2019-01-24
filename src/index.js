@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 
+import { injectGlobal } from 'styled-components'
+
 import Main from './App/Main'
 
 // Global Style

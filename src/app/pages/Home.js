@@ -16,25 +16,25 @@ import Section from './../components/Section'
 import { Heading, Subheading } from './../components/Typography'
 
 const HomeWrapper = styled(Section)`
-  background-image: url(https://source.unsplash.com/t3zrEm88ehc/480x800);
+  background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: 480px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/768x1024);
+    background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
   }
 
   @media (min-width: 768px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1280x800);
+    background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
   }
 
   @media (min-width: 1280px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1600x900);
+    background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
   }
 
   @media (min-width: 1600px) {
-    background-image: url(https://source.unsplash.com/t3zrEm88ehc/1920x1080);
+    background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
   }
 
   &::before {
@@ -65,9 +65,9 @@ export default class Home extends React.Component {
         return (
             <HomeWrapper centered>
                 <Container>
-                    <Heading>Thomas Paine</Heading>
+                    <Heading>David Clifford</Heading>
 
-                    <Subheading>Designer & developer</Subheading>
+                    <Subheading>Developer</Subheading>
 
                     <HomeButton href="/portfolio">My work</HomeButton>
                 </Container>
