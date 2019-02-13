@@ -57,46 +57,24 @@ export default class Contact extends React.Component {
                 <Container>
                     <Heading>Say hello</Heading>
 
-                    <Text>I'm available for freelance work. If you are interested in a new project, collaboration, or just to chat, feel free to contact me.</Text>
-
-                    <ContactLink href="mailto:email@example.com">email@example.com</ContactLink>
+                    <Text>
+                        Hello, I am a young software engineer living in the wonderful city of Cleveland. I'm making this as a side project to learn react.
+                    </Text>
+                    <ContactLink href="mailto:dclifford14@gmail.com">dclifford14@gmail.com</ContactLink>
 
                     <Text>Follow me on the web:</Text>
 
                     <SocialMediaList>
-                        <li>
-                            <Link href="">
-                                <AwesomeIcon icon="twitter" />
-                            </Link>
-                        </li>
 
                         <li>
-                            <Link href="">
+                            <Link href="https://www.linkedin.com/in/david-clifford-83130035/">
                                 <AwesomeIcon icon="linkedin" />
                             </Link>
                         </li>
 
                         <li>
-                            <Link href="">
-                                <AwesomeIcon icon="behance" />
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link href="">
-                                <AwesomeIcon icon="dribbble" />
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link href="">
+                            <Link href="https://github.com/davcliff">
                                 <AwesomeIcon icon="github" />
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link href="">
-                                <AwesomeIcon icon="codepen" />
                             </Link>
                         </li>
                     </SocialMediaList>

@@ -95,11 +95,11 @@ export default class Portfolio extends React.Component {
         return (
             <PortfolioWrapper>
                 <Container>
-                    <Subheading>Thomas Paine</Subheading>
+                    <Subheading>Dave Clifford</Subheading>
 
                     <Heading>My work</Heading>
 
-                    <Text>Selected examples of my work. If you want to see more, drop me an email.</Text>
+                    <Text>Some links to clients that I have worked with on developing solutions for.</Text>
 
                     <PortfolioGrid>
                         <PortfolioItem href="">
@@ -141,7 +141,7 @@ export default class Portfolio extends React.Component {
 
                     <Text>Let's get in touch:</Text>
 
-                    <Link href="mailto:email@example.com">email@example.com</Link>
+                    <Link href="mailto:dclifford14@gmail.com">dclifford14@gmail.com</Link>
                 </Container>
             </PortfolioWrapper>
         )
