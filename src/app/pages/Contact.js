@@ -21,6 +21,7 @@ const ContactLink = styled(Link)`
   margin-bottom: 32px;
   display: inline-block;
   font-size: 16px;
+  color: white;
 
   @media (min-width: 768px) {
     font-size: 18px;

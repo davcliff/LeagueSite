@@ -12,6 +12,7 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-color: #7A8F98;
   `}
 
   ${Container} {

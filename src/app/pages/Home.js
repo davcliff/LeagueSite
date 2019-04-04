@@ -16,7 +16,7 @@ import Section from './../components/Section'
 import { Heading, Subheading } from './../components/Typography'
 
 const HomeWrapper = styled(Section)`
-  background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
+  /*background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,7 +35,7 @@ const HomeWrapper = styled(Section)`
 
   @media (min-width: 1600px) {
     background-image: url(https://photos.app.goo.gl/Ty5e3gGm6UVDoTbW6);
-  }
+  }*/
 
   &::before {
     position: absolute;
@@ -45,7 +45,6 @@ const HomeWrapper = styled(Section)`
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .4);
   }
 
   ${Container} {

@@ -6,6 +6,7 @@ export const Heading = styled.h1`
   margin-bottom: 0;
   font-size: 36px;
   font-weight: bold;
+  color: white;
 
   @media (min-width: 480px) {
     font-size: 48px;
@@ -28,6 +29,7 @@ export const Subheading = styled.h2`
   margin-bottom: 0;
   font-size: 24px;
   font-weight: bold;
+  color: white;
 
   @media (min-width: 480px) {
     font-size: 36px;
@@ -48,6 +50,25 @@ export const Subheading = styled.h2`
 export const Text = styled.p`
   margin-top: 0;
   font-size: 16px;
+  color: white;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 21px;
+  }
+
+  & + & {
+    margin-top: 32px;
+  }
+`
+
+export const Paragraph = styled.p`
+  margin-top: 0;
+  font-size: 16px;
+  color: white;
 
   @media (min-width: 768px) {
     font-size: 18px;

@@ -1,0 +1,115 @@
+[
+  {
+    "active" : [
+      {
+        "name": "Dave Clifford",
+        "nickName": "Cliff",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Andrew Spitzer",
+        "nickName": "Spitz",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Jacob Freshour",
+        "nickName": "Jake",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Connor Davin",
+        "nickName": "Connor",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Paul Schaefer",
+        "nickName": "Scumball",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Bradley Ansec",
+        "nickName": "Breezy",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Joe Lero",
+        "nickName": "Stache",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Phil Bucur",
+        "nickName": "Buc",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Nicholas Dittrich",
+        "nickName": "Cole",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      },
+      {
+        "name": "Kevin Mawby",
+        "nickName": "Molly",
+        "bio": "",
+        "notablePlayers": "",
+        "lifetimeRecord": "",
+        "image": ""
+      }
+    ] ,
+    "retired" : [
+      {
+        "name" : "Douglas Dewysocki",
+        "nickName" : "Doug",
+        "bio" : "",
+        "notablePlayers" : "",
+        "lifetimeRecord" : "",
+        "image" : "",
+        "yearsActive" : ""
+      },
+      {
+        "name" : "David Sved",
+        "nickName" : "Dr.",
+        "bio" : "",
+        "notablePlayers" : "",
+        "lifetimeRecord" : "",
+        "image" : "",
+        "yearsActive" : ""
+      },
+      {
+        "name" : "Will Clark",
+        "nickName" : "Fragget",
+        "bio" : "",
+        "notablePlayers" : "",
+        "lifetimeRecord" : "",
+        "image" : "",
+        "yearsActive" : ""
+      }
+    ]
+  }
+]

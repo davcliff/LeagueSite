@@ -14,17 +14,18 @@ import Section from './../components/Section'
 // Import typography components
 import { Heading, Subheading, Text } from './../components/Typography'
 
-const PortfolioWrapper = styled(Section)`
+const MemberWrapper = styled(Section)`
   padding-top: 120px;
   padding-bottom: 80px;
+  background-color: #7A8F98;
 `
-const PortfolioGrid = styled.div`
+const MemberGrid = styled.div`
   padding-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
 `
 
-const PortfolioItem = styled.a`
+const MemberItem = styled.a`
   display: block;
   cursor: pointer;
   width: 100%;
@@ -85,65 +86,38 @@ const PortfolioItem = styled.a`
   }
 `
 
-const PortfolioItemThumbnail = styled.img`
-  max-width: 100%;
+const MemberItemThumbnail = styled.img`
+  width: 80%;
+  height: auto;
   object-fit: contain;
 `
 
 export default class Portfolio extends React.Component {
     render () {
         return (
-            <PortfolioWrapper>
+            <MemberWrapper>
                 <Container>
-                    <Subheading>Dave Clifford</Subheading>
+                    <Subheading>League Members</Subheading>
 
-                    <Heading>My work</Heading>
+                    <Heading>Active</Heading>
 
-                    <Text>Some links to clients that I have worked with on developing solutions for.</Text>
+                    <Text>Current members of this shitty league.</Text>
 
-                    <PortfolioGrid>
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/z4CAuzwaXrM/600x600" srcSet="https://source.unsplash.com/z4CAuzwaXrM/600x600 1x, https://source.unsplash.com/z4CAuzwaXrM/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
+                    <MemberGrid>
+                        <MemberItem href="https://www.costco.com">
+                            <MemberItemThumbnail src="https://svenhards.com/wp-content/uploads/2017/08/costco-wholesale-logo.png"
+                                                    srcSet="https://svenhards.com/wp-content/uploads/2017/08/costco-wholesale-logo.png 1x,
+                                                            https://svenhards.com/wp-content/uploads/2017/08/costco-wholesale-logo.png 2x"
+                                                    alt="Costco" />
+                        </MemberItem>
 
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/-aDl1z8_nGY/600x600" srcSet="https://source.unsplash.com/-aDl1z8_nGY/600x600 1x, https://source.unsplash.com/-aDl1z8_nGY/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/qvEwMfUX_DM/600x600" srcSet="https://source.unsplash.com/qvEwMfUX_DM/600x600 1x, https://source.unsplash.com/qvEwMfUX_DM/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/9QjbejABFn8/600x600" srcSet="https://source.unsplash.com/9QjbejABFn8/600x600 1x, https://source.unsplash.com/9QjbejABFn8/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/cDD83wV627U/600x600" srcSet="https://source.unsplash.com/cDD83wV627U/600x600 1x, https://source.unsplash.com/cDD83wV627U/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/KDYcgCEoFcY/600x600" srcSet="https://source.unsplash.com/KDYcgCEoFcY/600x600 1x, https://source.unsplash.com/KDYcgCEoFcY/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/oKfCxcKnCo8/600x600" srcSet="https://source.unsplash.com/oKfCxcKnCo8/600x600 1x, https://source.unsplash.com/oKfCxcKnCo8/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/dClHqW-EfS8/600x600" srcSet="https://source.unsplash.com/dClHqW-EfS8/600x600 1x, https://source.unsplash.com/dClHqW-EfS8/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-
-                        <PortfolioItem href="">
-                            <PortfolioItemThumbnail src="https://source.unsplash.com/74elF-XSsPg/600x600" srcSet="https://source.unsplash.com/74elF-XSsPg/600x600 1x, https://source.unsplash.com/74elF-XSsPg/1200x1200 2x" alt="Example of work" />
-                        </PortfolioItem>
-                    </PortfolioGrid>
+                    </MemberGrid>
 
                     <Text>Let's get in touch:</Text>
 
                     <Link href="mailto:dclifford14@gmail.com">dclifford14@gmail.com</Link>
                 </Container>
-            </PortfolioWrapper>
+            </MemberWrapper>
         )
     }
 }

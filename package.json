@@ -1,7 +1,7 @@
 {
   "name": "leagueSite",
   "version": "1.0.0",
-  "description": "Fantasy Football league website built with react.",
+  "description": "Fantasy Football League website built with react.",
   "engines": {
     "node": ">=9.x",
     "npm": ">=5.x",
@@ -18,8 +18,8 @@
     "build": "parcel build ./src/index.html",
     "start": "parcel ./src/index.html -p 1337"
   },
-  "author": "Your name",
-  "license": "MIT",
+  "author": "David Clifford",
+  "license": "Whats a license",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
