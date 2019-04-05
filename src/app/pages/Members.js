@@ -92,32 +92,34 @@ const MemberItemThumbnail = styled.img`
   object-fit: contain;
 `
 
-export default class Portfolio extends React.Component {
+var memberData = require('../../data/MemberData.json');
+
+export default class Members extends React.Component {
     render () {
+        const members = memberData[0].active.map((member) =>
+            <li key={member.id}>
+                <text>{member.name}</text>
+                <text>{member.nickName}</text>
+                <text>{member.lifetimeRecord}</text>
+            </li>
+        );
+        const retired = memberData[0].retired.map((retired) =>
+            <li key={retired.id}>
+                <text>{retired.name}</text>
+                <text>{retired.nickName}</text>
+            </li>
+        );
         return (
-            <MemberWrapper>
-                <Container>
-                    <Subheading>League Members</Subheading>
-
-                    <Heading>Active</Heading>
-
-                    <Text>Current members of this shitty league.</Text>
-
-                    <MemberGrid>
-                        <MemberItem href="https://www.costco.com">
-                            <MemberItemThumbnail src="https://svenhards.com/wp-content/uploads/2017/08/costco-wholesale-logo.png"
-                                                    srcSet="https://svenhards.com/wp-content/uploads/2017/08/costco-wholesale-logo.png 1x,
-                                                            https://svenhards.com/wp-content/uploads/2017/08/costco-wholesale-logo.png 2x"
-                                                    alt="Costco" />
-                        </MemberItem>
-
-                    </MemberGrid>
-
-                    <Text>Let's get in touch:</Text>
-
-                    <Link href="mailto:dclifford14@gmail.com">dclifford14@gmail.com</Link>
-                </Container>
-            </MemberWrapper>
+            <div>
+                <ul>
+                    <h1>Members</h1>
+                    {members}
+                </ul>
+                <br/>
+                <ul>
+                    {retired}
+                </ul>
+            </div>
         )
     }
 }

@@ -68,7 +68,7 @@ export default class Home extends React.Component {
 
                     <Subheading>Developer</Subheading>
 
-                    <HomeButton href="/portfolio">My work</HomeButton>
+                    <HomeButton href="/members">League Members</HomeButton>
                 </Container>
             </HomeWrapper>
         )

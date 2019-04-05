@@ -5,7 +5,8 @@ import { Route } from 'react-router-dom'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
-import Portfolio from './pages/Portfolio'
+import Members from './pages/Members'
+import History from './pages/History'
 
 import Nav from './components/Nav'
 
@@ -19,7 +20,8 @@ export default class Main extends React.Component {
         <Route exact={true} path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
-        <Route path="/portfolio" component={Portfolio}/>
+        <Route path="/members" component={Members}/>
+        <Route path="/history" component={History}/>
       </div>
     )
   }
