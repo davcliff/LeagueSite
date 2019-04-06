@@ -123,14 +123,15 @@ export default class Members extends React.Component {
         return (
             <MemberWrapper>
                 <Container>
+                    <Heading>The Degenerates</Heading>
                     <MemberGrid>
                         <div>
-                            <h1>Active Members</h1>
+                            <Subheading>Active Members</Subheading>
                             <ul>
                                 {members}
                             </ul>
                             <br/>
-                            <h1>Retired Members</h1>
+                            <Subheading>Retired Members</Subheading>
                             <ul>
                                 {retired}
                             </ul>
