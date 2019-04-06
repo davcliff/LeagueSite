@@ -98,28 +98,46 @@ export default class Members extends React.Component {
     render () {
         const members = memberData[0].active.map((member) =>
             <li key={member.id}>
-                <text>{member.name}</text>
-                <text>{member.nickName}</text>
-                <text>{member.lifetimeRecord}</text>
+                <MemberItem>
+                    <MemberItemThumbnail
+                        alt={member.nickName}
+                        src={member.image}
+                        srcSet={member.image} />
+                    <text>{member.nickName}</text><br/>
+                    <text>{member.lifetimeRecord}</text>
+                </MemberItem>
             </li>
         );
         const retired = memberData[0].retired.map((retired) =>
             <li key={retired.id}>
-                <text>{retired.name}</text>
-                <text>{retired.nickName}</text>
+                <MemberItem>
+                    <MemberItemThumbnail
+                        alt={retired.nickName}
+                        src={retired.image}
+                        srcSet={retired.image}  />
+                    <text>{retired.nickName}</text><br/>
+                    <text>{retired.lifetimeRecord}</text>
+                </MemberItem>
             </li>
         );
         return (
-            <div>
-                <ul>
-                    <h1>Members</h1>
-                    {members}
-                </ul>
-                <br/>
-                <ul>
-                    {retired}
-                </ul>
-            </div>
+            <MemberWrapper>
+                <Container>
+                    <MemberGrid>
+                        <div>
+                            <h1>Active Members</h1>
+                            <ul>
+                                {members}
+                            </ul>
+                            <br/>
+                            <h1>Retired Members</h1>
+                            <ul>
+                                {retired}
+                            </ul>
+                        </div>
+                    </MemberGrid>
+                </Container>
+            </MemberWrapper>
         )
     }
 }
