@@ -96,29 +96,33 @@ var memberData = require('../../data/MemberData.json');
 
 export default class Members extends React.Component {
     render () {
-        const members = memberData[0].active.map((member) =>
-            <li key={member.id}>
-                <MemberItem>
-                    <MemberItemThumbnail
-                        alt={member.nickName}
-                        src={member.image}
-                        srcSet={member.image} />
-                    <text>{member.nickName}</text><br/>
-                    <text>{member.lifetimeRecord}</text>
-                </MemberItem>
-            </li>
-        );
+        const baseImgUrl = "../../../img/";
+        const members = memberData[0].active.map((member) => {
+            return (
+                <MemberItem
+                    key={member.id}
+                    name={member.name}
+                    nickName={member.nickName}
+                    record={member.lifetimeRecord}
+                    bio={member.bio}
+                    notablePlayers={member.notablePlayers}
+                    image={baseImgUrl + member.image}
+                />
+            );
+        });
         const retired = memberData[0].retired.map((retired) =>
-            <li key={retired.id}>
-                <MemberItem>
-                    <MemberItemThumbnail
-                        alt={retired.nickName}
-                        src={retired.image}
-                        srcSet={retired.image}  />
-                    <text>{retired.nickName}</text><br/>
-                    <text>{retired.lifetimeRecord}</text>
-                </MemberItem>
-            </li>
+            <MemberItem key={retired.id}>
+                <img
+                    alt={retired.nickName}
+                    src={require(`${baseImgUrl}${retired.image}`)}/>
+                {retired.nickName}<br/>
+                {retired.lifetimeRecord}<br/>
+            </MemberItem>
+        );
+        const memberItem = member => (
+          <div>
+              <p>{</p>
+          </div>
         );
         return (
             <MemberWrapper>
@@ -127,14 +131,13 @@ export default class Members extends React.Component {
                     <MemberGrid>
                         <div>
                             <Subheading>Active Members</Subheading>
-                            <ul>
+                            <div>
+                                <img
+                            </div>
                                 {members}
-                            </ul>
                             <br/>
                             <Subheading>Retired Members</Subheading>
-                            <ul>
                                 {retired}
-                            </ul>
                         </div>
                     </MemberGrid>
                 </Container>
