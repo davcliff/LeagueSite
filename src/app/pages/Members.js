@@ -121,7 +121,9 @@ export default class Members extends React.Component {
         );
         const memberItem = member => (
           <div>
-              <p>{</p>
+              <p>{member.nickName}</p>
+              <img alt={member.nickName} src={require(`${member.image}`)}/>
+              <p>{member.record}</p>
           </div>
         );
         return (
@@ -132,7 +134,7 @@ export default class Members extends React.Component {
                         <div>
                             <Subheading>Active Members</Subheading>
                             <div>
-                                <img
+                                {memberItem()}
                             </div>
                                 {members}
                             <br/>
